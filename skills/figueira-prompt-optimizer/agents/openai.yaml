@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figueira Prompt Optimizer"
+  short_description: "Optimize prompts for coding, image, and video"
+  default_prompt: "Use $figueira-prompt-optimizer to turn my rough instruction into a concise prompt optimized for the destination AI or generation tool."

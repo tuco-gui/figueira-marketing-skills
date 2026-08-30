@@ -1,5 +1,15 @@
 # Changelog — figueira-prompt-optimizer
 
+## [0.2.1] - 2026-08-30
+
+### Added
+- Codex UI metadata through `agents/openai.yaml`.
+- Concrete install instructions for Claude Code, Gemini CLI and interoperable `.agents/skills` setups.
+- Repository install helper for symlink or copy installs.
+
+### Changed
+- Installation docs now distinguish direct local Agent Skills use from Codex plugin distribution.
+
 ## [0.2.0] - 2026-08-30
 
 ### Added

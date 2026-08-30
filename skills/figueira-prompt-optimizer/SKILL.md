@@ -1,7 +1,7 @@
 ---
 name: figueira-prompt-optimizer
 description: Compile rough instructions into concise, context-aware, destination-specific prompts for coding, text, image and video tools. Use when the user asks to improve, rewrite, structure or adapt a prompt for a named AI/tool, or when a visual prompt must be adapted to a generation surface or model such as Gemini, Google Flow, Runway, Kling, Higgsfield, Seedance, Grok Imagine, Midjourney, FLUX, Ideogram or Luma.
-version: 0.2.0
+version: 0.2.1
 ---
 
 # Figueira Prompt Optimizer

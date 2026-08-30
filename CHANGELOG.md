@@ -2,6 +2,12 @@
 
 All notable repository-level changes are documented here.
 
+## [0.2.1] - 2026-08-30
+
+### Added
+- Cross-agent installation helper and concrete installation instructions.
+- Codex-compatible `agents/openai.yaml` metadata for `figueira-prompt-optimizer`.
+
 ## [0.2.0] - 2026-08-30
 
 ### Changed

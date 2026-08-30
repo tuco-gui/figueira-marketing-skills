@@ -1,54 +1,152 @@
 # Installation
 
-The skills in this repository are plain-text Agent Skills designed to be portable across compatible tools and instruction-loading environments.
+The skills in this repository follow the Agent Skills folder pattern: one skill directory containing `SKILL.md` plus optional `references/`, `scripts/`, `assets/` and product metadata.
 
-## Clone the repository
+## Clone
 
 ```bash
 git clone https://github.com/tuco-gui/figueira-marketing-skills.git
 cd figueira-marketing-skills
 ```
 
-## Generic installation
+## Fast local installer (macOS/Linux)
 
-Copy the desired skill directory into the skills directory used by your agent environment:
+The repository includes a symlink/copy helper:
 
 ```bash
-cp -R skills/figueira-prompt-optimizer /path/to/your/agent/skills/
+./scripts/install-skill.sh figueira-prompt-optimizer claude
+./scripts/install-skill.sh figueira-prompt-optimizer gemini
+./scripts/install-skill.sh figueira-prompt-optimizer agents
 ```
 
-Keep the complete directory together, especially `SKILL.md` and `references/`, so detailed target instructions remain available on demand.
+Default mode is `--link`, which is convenient for development because `git pull` updates the installed skill immediately. Use `--copy` as the third argument for an independent copy.
 
-## Codex-style setup
+---
 
-Place the full skill directory in the configured skills path and invoke it by name:
+## Claude Code
+
+Claude Code discovers personal skills at:
 
 ```text
-figueira-prompt-optimizer
+~/.claude/skills/<skill-name>/SKILL.md
 ```
 
-Keep persistent project rules in `AGENTS.md`; do not copy skill references into persistent context.
+and project skills at:
 
-## Claude Code-style setup
+```text
+<project>/.claude/skills/<skill-name>/SKILL.md
+```
 
-Place the skill directory where your Claude Code environment loads reusable skills or commands. Keep persistent project context in `CLAUDE.md`; keep this skill focused on the reusable procedure.
+### Personal install
 
-## Gemini-style setup
+```bash
+mkdir -p ~/.claude/skills
+ln -s "$(pwd)/skills/figueira-prompt-optimizer" \
+  ~/.claude/skills/figueira-prompt-optimizer
+```
 
-Keep persistent project context in the relevant `GEMINI.md` hierarchy. Expose this skill separately so target adapters are loaded only when required.
+Or use the included installer:
+
+```bash
+./scripts/install-skill.sh figueira-prompt-optimizer claude
+```
+
+Claude can auto-select the skill from its description or you can invoke it directly as:
+
+```text
+/figueira-prompt-optimizer
+```
+
+---
+
+## Gemini CLI
+
+Gemini CLI supports user skills at `~/.gemini/skills/` (and `~/.agents/skills/`) and workspace skills at `.gemini/skills/` (and `.agents/skills/`).
+
+### Install directly from this GitHub repository
+
+```bash
+gemini skills install https://github.com/tuco-gui/figueira-marketing-skills.git \
+  --path skills/figueira-prompt-optimizer
+```
+
+### Or link a clone
+
+```bash
+./scripts/install-skill.sh figueira-prompt-optimizer gemini
+```
+
+Verify discovery in Gemini CLI:
+
+```text
+/skills list
+```
+
+After editing a linked skill, refresh with:
+
+```text
+/skills reload
+```
+
+---
+
+## Codex / OpenAI Agent Skills
+
+The current Codex skill format uses `SKILL.md` and supports product-specific UI metadata in `agents/openai.yaml`. This repository includes that metadata for `figueira-prompt-optimizer`.
+
+For direct local Agent Skills use, install to the interoperable `.agents/skills` location:
+
+```bash
+./scripts/install-skill.sh figueira-prompt-optimizer agents
+```
+
+which links to:
+
+```text
+~/.agents/skills/figueira-prompt-optimizer
+```
+
+OpenAI's current public distribution direction for Codex is the plugin system, where a skill can be bundled inside a skill-only plugin. The canonical skill in this repository stays vendor-portable; a Codex plugin wrapper can be maintained separately without duplicating the procedural content.
+
+---
+
+## Project/workspace install
+
+For a repository that should carry the skill for collaborators, copy or link the skill into the tool-specific project directory, for example:
+
+```bash
+mkdir -p .claude/skills
+cp -R /path/to/figueira-marketing-skills/skills/figueira-prompt-optimizer \
+  .claude/skills/
+```
+
+or:
+
+```bash
+mkdir -p .gemini/skills
+cp -R /path/to/figueira-marketing-skills/skills/figueira-prompt-optimizer \
+  .gemini/skills/
+```
+
+For an interoperable project layout where supported:
+
+```text
+.agents/skills/figueira-prompt-optimizer/SKILL.md
+```
 
 ## Updating
 
+For symlink installs:
+
 ```bash
+cd /path/to/figueira-marketing-skills
 git pull
 ```
 
-For local development, a symlink can avoid manual copying:
-
-```bash
-ln -s /path/to/figueira-marketing-skills/skills/figueira-prompt-optimizer /path/to/your/agent/skills/figueira-prompt-optimizer
-```
+For copied installs, copy the updated skill directory again after reviewing the changelog.
 
 ## Security
 
-Never add secrets, client information, internal Figueira documents or private project context to a public skill directory.
+Skills can contain instructions, scripts and resources that an agent may execute or read. Review a third-party skill before installing it.
+
+Never add credentials, client information, internal Figueira documents, private strategy, secrets or tokens to this public repository.
