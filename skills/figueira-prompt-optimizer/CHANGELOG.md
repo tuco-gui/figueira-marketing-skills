@@ -1,5 +1,21 @@
 # Changelog — figueira-prompt-optimizer
 
+## [0.2.0] - 2026-08-30
+
+### Added
+- Explicit provider + surface + model routing.
+- Target capability registry.
+- General text modality adapter.
+- Surface+model composition, including Higgsfield + Seedance.
+- Adapters for ChatGPT image generation, Grok Imagine, Seedance 2.5, Midjourney, FLUX.2, Ideogram and Luma Dream Machine.
+- Lifecycle handling for deprecated/retired targets.
+- Evaluation rubric and expanded eval suite.
+
+### Changed
+- Higgsfield is treated as a hosting surface rather than a synonym for Seedance.
+- Freshness-sensitive visual targets must not be silently assumed active.
+- Sora web/app is no longer listed as an active target.
+
 ## [0.1.0] - 2026-08-30
 
 ### Added
