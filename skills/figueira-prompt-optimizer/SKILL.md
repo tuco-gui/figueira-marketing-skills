@@ -1,7 +1,7 @@
 ---
 name: figueira-prompt-optimizer
-description: Compile rough instructions into concise, context-aware, destination-specific prompts for coding, text, image and video tools. Use when the user asks to improve, rewrite, structure or adapt a prompt for a named AI/tool, or when a visual prompt must be adapted to a generation surface or model such as Gemini, Google Flow, Runway, Kling, Higgsfield, Seedance, Grok Imagine, Midjourney, FLUX, Ideogram or Luma.
-version: 0.2.1
+description: Compile rough instructions into concise, context-aware, destination-specific prompts for coding, text, design, image and video tools. Use when the user asks to improve, rewrite, structure or adapt a prompt for a named AI/tool, or when a prompt must be adapted to a surface or model such as Codex, Claude Code, Claude Design, Gemini, Google Flow, Adobe Firefly, Runway, Kling, Higgsfield, Seedance, Grok Imagine, Midjourney, FLUX, Ideogram or Luma.
+version: 0.3.0
 ---
 
 # Figueira Prompt Optimizer
@@ -23,7 +23,7 @@ Transform the user's raw intent into a prompt optimized for the actual destinati
 
 ## Routing
 Determine:
-- `modality`: text | coding | image | video | mixed
+- `modality`: text | coding | design | image | video | mixed
 - `operation`: create | edit | transform | continue | analyze | reconstruct
 - `provider`: company/service family
 - `surface`: app/interface/workflow where the prompt will be used
@@ -37,7 +37,7 @@ Read in this order:
 4. `references/targets/registry.md`
 5. only the relevant target/model adapter(s)
 
-When both a surface adapter and a model adapter apply, combine them. Example: Higgsfield surface + Seedance model.
+When both a surface adapter and a model adapter apply, combine them. Examples: Higgsfield + Seedance; Adobe Firefly + FLUX.2/Veo/Kling when that model is selected.
 
 ## Ambiguity policy
 Do not ask a clarifying question when useful variants can be returned safely.
@@ -49,9 +49,10 @@ Special Google rule:
 Return multiple variants for other providers only when the surface/model changes the prompt structure materially.
 
 ## Freshness policy
-Visual products change quickly. If the environment has current documentation/web access and the requested model, surface or feature is uncertain, verify it before selecting an adapter. Do not silently route to a discontinued surface.
+Visual and design products change quickly. If the environment has current documentation/web access and the requested model, surface or feature is uncertain, verify it before selecting an adapter. Do not silently route to a discontinued surface.
 
-## Visual prompting
+## Visual/design prompting
+- Design: specify artifact, purpose, audience, information hierarchy, interaction/layout constraints and handoff needs; do not treat a design canvas as a diffusion image generator.
 - Text-to-image: describe the intended visual result.
 - Image edit: separate `Modify` from `Preserve` when fidelity matters.
 - Text-to-video: describe subject/action, scene, camera and temporal behavior according to the destination.
@@ -75,7 +76,7 @@ Verify:
 - unnecessary context is absent;
 - constraints are preserved;
 - referenced assets have defined roles;
-- visual prompt matches the operation (T2I/I2I/T2V/I2V/edit/reference);
+- prompt matches the operation and modality;
 - unsupported syntax or controls are not invented;
 - no contradictory instructions remain;
 - output is directly usable.

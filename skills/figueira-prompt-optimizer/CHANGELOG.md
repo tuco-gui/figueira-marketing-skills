@@ -1,5 +1,16 @@
 # Changelog — figueira-prompt-optimizer
 
+## [0.3.0] - 2026-08-30
+
+### Added
+- `design` modality for prototypes, mockups, decks and one-pagers.
+- Claude Design surface adapter.
+- Adobe Firefly surface adapter with surface+model composition.
+- Eval coverage for Claude Design and Firefly reference/camera workflows.
+
+### Changed
+- Routing description now explicitly covers design surfaces in addition to text, coding, image and video.
+
 ## [0.2.1] - 2026-08-30
 
 ### Added

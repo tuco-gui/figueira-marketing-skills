@@ -7,10 +7,12 @@ This registry is a routing index, not a permanent claim that every product featu
 | OpenAI | Codex | coding | `codex.md` | Issue-like, outcome-first coding tasks |
 | OpenAI | ChatGPT image generation | image/edit | `openai-image.md` | Natural-language visual instructions; edits can use explicit preservation constraints |
 | Anthropic | Claude Code | coding | `claude-code.md` | Concrete repo context; structured task boundaries |
+| Anthropic | Claude Design | design | `claude-design.md` | Editable prototypes, mockups, decks and one-pagers; not a diffusion-image surface |
 | Google | Gemini / Gemini CLI | text/coding | `gemini.md` | Avoid repeating `GEMINI.md` context |
 | Google | Gemini image | image/edit | `gemini.md` | Detailed scene description when control is needed |
 | Google | Veo | video | `gemini.md` | Camera, motion, mood, sound where supported |
 | Google | Flow | image/video/edit | `google-flow.md` + model adapter if known | Ingredients, frames and references can change prompt structure |
+| Adobe | Firefly surface | image/video/design/edit | `adobe-firefly.md` + selected model adapter if known | Firefly can host Adobe and third-party generation models |
 | Runway | Gen-4 family | image/video | `runway.md` | Image-to-video should emphasize motion |
 | Kling | Kling video / O1 | video/edit/reference | `kling.md` | O1 supports multimodal reference/edit workflows |
 | Higgsfield | studios / generator surface | image/video | `higgsfield.md` + selected model adapter | Surface hosts multiple models |

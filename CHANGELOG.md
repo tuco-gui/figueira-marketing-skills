@@ -2,6 +2,12 @@
 
 All notable repository-level changes are documented here.
 
+## [0.3.0] - 2026-08-30
+
+### Changed
+- `figueira-prompt-optimizer` upgraded to v0.3.0 with design-surface routing.
+- Added Claude Design and Adobe Firefly adapters.
+
 ## [0.2.1] - 2026-08-30
 
 ### Added
