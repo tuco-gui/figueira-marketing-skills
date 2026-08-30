@@ -1,0 +1,23 @@
+interface:
+  display_name: "Figueira Web Design"
+  short_description: >-
+    Orchestrates design direction, UX/CRO, visual architecture, responsible
+    component sourcing, implementation and QA for any web experience: landing
+    pages, institutional sites, e-commerce and web apps. Use this skill
+    WHENEVER the work involves creating, redesigning, modernizing,
+    evaluating, fixing, styling or implementing pages, sites, online stores,
+    dashboards, portals, interfaces or web components, even when the request
+    sounds like just "make it look nice." Acts as an orchestration layer
+    above auxiliary visual skills; prevents premature implementation,
+    requires context-specific visual direction, avoids generic AI aesthetics
+    and keeps design separate from technology adapters such as
+    WordPress/WooCommerce, Shopify and React/Next.js.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+    - chatgpt
+    - codex
+    - api
+    - atlas
+  allow_implicit_invocation: true

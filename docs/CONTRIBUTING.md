@@ -22,6 +22,34 @@ skills/<skill-name>/
 └── evals/
 ```
 
+## Bilingual skills (pt-BR mirror)
+
+A skill may ship a full Portuguese (Brazil) translation alongside its English-canonical content. When it does, follow this layout:
+
+```text
+skills/<skill-name>/
+├── SKILL.md              # English, canonical
+├── README.md
+├── CHANGELOG.md           # English only, not mirrored
+├── agents/openai.yaml      # English only, not mirrored
+├── references/
+├── assets/
+├── evals/
+└── pt-BR/
+    ├── SKILL.md            # translated body, frontmatter (name/description) stays in English
+    ├── README.md
+    ├── references/         # same file tree as the English references/, fully translated
+    └── evals/               # same file tree as the English evals/, fully translated
+```
+
+Rules for the `pt-BR/` mirror:
+- English is canonical and always ships at the skill root; `pt-BR/` is a complete translation of it, not a subset.
+- `CHANGELOG.md` and `agents/openai.yaml` are English-only and are never duplicated under `pt-BR/`.
+- In both `SKILL.md` files, YAML frontmatter (`name`, `description`) stays in English — only the body is translated.
+- Structured status markers used in the prose (e.g. `NO DATA`, `UNVERIFIED`, `HYPOTHESIS`, `EXECUTED`/`NOT EXECUTED`) are translated too, not left literal — keep them consistent with the equivalents already used in that skill's own `pt-BR/SKILL.md`.
+- Proper nouns and technology names (React, Next.js, WordPress, WooCommerce, Shopify, shadcn/ui, etc.) stay in English in the pt-BR files.
+- Keep the English and `pt-BR/` reference/evals file trees structurally identical — a translation is not complete until every English file has a `pt-BR/` counterpart.
+
 ## Versioning
 
 Use semantic versioning:

@@ -14,15 +14,42 @@ figueira-marketing-skills/
 │   ├── INSTALLATION.md
 │   └── CONTRIBUTING.md
 └── skills/
-    └── figueira-prompt-optimizer/
+    ├── figueira-prompt-optimizer/
+    │   ├── SKILL.md
+    │   ├── README.md
+    │   ├── CHANGELOG.md
+    │   ├── references/
+    │   │   ├── core/
+    │   │   ├── modalities/
+    │   │   └── targets/
+    │   └── evals/
+    ├── figueira-branding/
+    │   ├── SKILL.md
+    │   ├── README.md
+    │   ├── CHANGELOG.md
+    │   ├── references/
+    │   ├── agents/openai.yaml
+    │   ├── assets/
+    │   ├── evals/
+    │   └── pt-BR/            # full Portuguese (Brazil) mirror
+    ├── figueira-copywriting/
+    │   ├── SKILL.md
+    │   ├── README.md
+    │   ├── CHANGELOG.md
+    │   ├── references/
+    │   ├── agents/openai.yaml
+    │   ├── assets/
+    │   ├── evals/
+    │   └── pt-BR/            # full Portuguese (Brazil) mirror
+    └── figueira-web-design/
         ├── SKILL.md
         ├── README.md
         ├── CHANGELOG.md
         ├── references/
-        │   ├── core/
-        │   ├── modalities/
-        │   └── targets/
-        └── evals/
+        ├── agents/openai.yaml
+        ├── assets/
+        ├── evals/
+        └── pt-BR/            # full Portuguese (Brazil) mirror
 ```
 
 ## Available skills
@@ -40,6 +67,43 @@ Highlights:
 - no dependency on private Figueira documents.
 
 See `skills/figueira-prompt-optimizer/README.md`.
+
+### figueira-copywriting
+
+Orchestrates high-conversion, high-retention copywriting across channels: landing pages, sales pages, e-commerce, ads, email, social posts/scripts, short video, VSL, advertorials, WhatsApp messages, and audits of existing copy.
+
+Highlights:
+- structured gates for context, VOC, offer, awareness/sophistication, Big Idea, mechanism, hooks and storytelling;
+- persuasion, truth, and compliance checks before publication;
+- CRO and QA scorecards, plus test/variant playbooks across 11 channels;
+- defers brand voice/strategy and visual/UX hierarchy to dedicated branding and design disciplines;
+- available in English (canonical) and a full Portuguese (Brazil) mirror under `pt-BR/`.
+
+See `skills/figueira-copywriting/README.md`.
+
+### figueira-branding
+
+Orchestrates brand creation, audit, refresh, rebrand, and extension: strategy, positioning, research, verbal identity, visual identity, logo systems, applications, governance, and rollout.
+
+Highlights:
+- gated workflow from problem definition through research, positioning, naming, verbal identity, three genuinely distinct visual territories, critique, system documentation, and governance;
+- explicit scope resolution (client / prospect / internal) so history, audience, and equity are never mixed across entities;
+- truth and evidence rules — no fabricated market perception, research, or metrics;
+- available in English (canonical) and a full Portuguese (Brazil) mirror under `pt-BR/`.
+
+See `skills/figueira-branding/README.md`.
+
+### figueira-web-design
+
+Orchestrates design direction, UX/CRO, visual architecture, responsible component sourcing, implementation, and QA for any web experience: landing pages, institutional sites, e-commerce, and web apps.
+
+Highlights:
+- acts as an orchestration layer above auxiliary visual skills, preventing premature implementation;
+- requires context-specific visual direction and avoids generic AI aesthetics;
+- separates design decisions from technology adapters (WordPress/WooCommerce, Shopify, React/Next.js);
+- available in English (canonical) and a full Portuguese (Brazil) mirror under `pt-BR/`.
+
+See `skills/figueira-web-design/README.md`.
 
 ## Installation
 

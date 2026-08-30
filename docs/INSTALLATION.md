@@ -2,6 +2,10 @@
 
 The skills in this repository follow the Agent Skills folder pattern: one skill directory containing `SKILL.md` plus optional `references/`, `scripts/`, `assets/` and product metadata.
 
+Available skills: `figueira-prompt-optimizer`, `figueira-copywriting`, `figueira-branding`, `figueira-web-design`. Every command below uses `figueira-prompt-optimizer` as the example — substitute any of the other skill names to install those instead.
+
+`figueira-copywriting`, `figueira-branding` and `figueira-web-design` ship in English at their skill root and include a full Portuguese (Brazil) mirror under `<skill>/pt-BR/`. Installing the skill (by any method below) makes both available; the agent loads the English `SKILL.md` by default, and `pt-BR/SKILL.md` is available as reference material for Portuguese-speaking workflows.
+
 ## Clone
 
 ```bash

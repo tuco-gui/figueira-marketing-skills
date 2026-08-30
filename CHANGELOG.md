@@ -2,6 +2,13 @@
 
 All notable repository-level changes are documented here.
 
+## [0.4.0] - 2026-08-30
+
+### Added
+- Three new skills: `figueira-copywriting`, `figueira-branding`, `figueira-web-design`.
+- Bilingual distribution pattern: each new skill ships English (canonical, at the skill root) plus a full Portuguese (Brazil) mirror under `pt-BR/`.
+- `evals/rubric.md` and `evals/cases.md` acceptance-test coverage for all three new skills, following the convention established by `figueira-prompt-optimizer`.
+
 ## [0.3.0] - 2026-08-30
 
 ### Changed

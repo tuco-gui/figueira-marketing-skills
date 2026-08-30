@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figueira Copywriting"
+  short_description: "High-conversion, high-retention copywriting orchestrator"
+  default_prompt: "Use $figueira-copywriting to write or audit persuasive, truthful, conversion-focused copy for the destination channel."

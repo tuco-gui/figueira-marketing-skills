@@ -1,0 +1,13 @@
+interface:
+  display_name: "Branding"
+  short_description: "Orchestrate brand creation, audit, refresh, and rebrand"
+  default_prompt: "Use $figueira-branding, mode new-brand, depth STANDARD, to build the brand for [business]."
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+    - chatgpt
+    - codex
+    - api
+    - atlas
+  allow_implicit_invocation: true
