@@ -6,6 +6,8 @@ All notable repository-level changes are documented here.
 
 ### Changed
 - Prepared `figueira-content-squad` v1.1.0 for OpenAI universal plugin-directory submission.
+- Removed redundant `.codex-plugin/plugin.json`; `plugin.json` is now the single OpenAI configuration source.
+- Expanded submission tests to the exact reviewer fields required for five positive and three negative cases.
 - Added directory-compliant short metadata, required square branding assets, privacy/terms links and three starter prompts.
 - Added a reproducible submission dossier with five positive and three negative review cases.
 

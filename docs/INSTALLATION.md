@@ -190,7 +190,12 @@ O marketplace canônico está em `.agents/plugins/marketplace.json`. Depois que 
 
 ### ChatGPT Chat e Work na Web
 
-O pacote usa o manifesto portátil atual de plugins. Para uso na Web, o plugin precisa estar instalado/publicado na conta ou workspace. Em workspaces compatíveis, importe e sincronize o marketplace deste repositório pelo GitHub.
+O pacote usa o manifesto portátil atual de plugins.
+
+- **Diretório público:** envie o ZIP skill-only gerado por `scripts/package-content-squad.sh` ao portal de submissão da OpenAI. Depois de aprovado, o mesmo plugin fica disponível no diretório universal compartilhado por ChatGPT e Codex.
+- **Workspace compatível:** administradores podem importar/sincronizar o marketplace GitHub para uso privado antes da publicação pública.
+
+A fonte continua sendo `plugins/figueira-content-squad/`; não crie uma cópia separada "Web".
 
 ### Codex web/cloud
 

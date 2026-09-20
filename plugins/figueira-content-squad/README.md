@@ -29,7 +29,7 @@ Em ChatGPT, os mesmos arquivos podem viver no Projeto/Work do cliente.
 - ChatGPT/Codex desktop via marketplace de plugin.
 - Codex CLI via `/plugins` ou `codex plugin marketplace add tuco-gui/figueira-marketing-skills`.
 
-O manifesto portátil é `plugin.json`. `.codex-plugin/plugin.json` existe apenas como fallback de compatibilidade.
+O manifesto portátil `plugin.json` é a única fonte de configuração OpenAI deste plugin. Não mantenha overlay paralelo em `.codex-plugin/`.
 
 ## Instalação pelo marketplace
 
@@ -43,7 +43,7 @@ codex plugin marketplace add tuco-gui/figueira-marketing-skills
 
 Depois abra `/plugins`, selecione **Figueira Marketing Skills** e instale **Figueira Content Squad**.
 
-Para ChatGPT/Work na Web, importe/sincronize este marketplace pelo mecanismo de Plugins do workspace/conta quando essa opção estiver disponível.
+Para ChatGPT Web público, use o pacote skill-only deste mesmo diretório no portal de submissão da OpenAI. Após aprovação, o plugin passa a ser distribuído pelo diretório universal compartilhado por ChatGPT e Codex. Marketplaces Git continuam sendo o canal de desenvolvimento/teste e distribuição privada.
 
 ## Regra de manutenção
 
