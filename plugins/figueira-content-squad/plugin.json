@@ -9,7 +9,14 @@
   },
   "homepage": "https://github.com/tuco-gui/figueira-marketing-skills/tree/main/plugins/figueira-content-squad",
   "repository": "https://github.com/tuco-gui/figueira-marketing-skills",
-  "keywords": ["figueira", "marketing", "linkedin", "content", "copywriting", "carousel"],
+  "keywords": [
+    "figueira",
+    "marketing",
+    "linkedin",
+    "content",
+    "copywriting",
+    "carousel"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -35,7 +42,8 @@
           "Planeje minha semana de conteúdo no LinkedIn com o Figueira Content Squad.",
           "Transforme este briefing em ganchos e um post de LinkedIn.",
           "Transforme este post aprovado em um carrossel de LinkedIn."
-        ]
+        ],
+        "supportURL": "https://github.com/tuco-gui/figueira-marketing-skills/issues"
       }
     }
   }

@@ -1,0 +1,28 @@
+name: Package Figueira Content Squad
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "plugins/figueira-content-squad/**"
+      - "scripts/package-content-squad.sh"
+      - ".github/workflows/package-content-squad.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Validate and package
+        run: bash scripts/package-content-squad.sh
+      - name: Upload plugin ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: figueira-content-squad-openai-1.1.0
+          path: dist/Figueira-Content-Squad-OpenAI-1.1.0.zip
+          if-no-files-found: error
+          retention-days: 30

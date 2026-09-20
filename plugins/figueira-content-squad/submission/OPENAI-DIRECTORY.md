@@ -42,3 +42,7 @@ Brasil inicialmente. Expandir somente depois de validar idioma, suporte e adequa
 ## Notas de versão
 
 Primeiro envio público do Figueira Content Squad. Plugin skill-only com cinco skills integradas e sem MCP remoto, autenticação ou backend próprio.
+
+## Revisão de nomes internos antes do envio público
+
+As skills internas atualmente usam os identificadores `kotler`, `hormozi`, `ogilvy` e `davinci`. O nome público do plugin é **Figueira Content Squad** e não sugere afiliação com terceiros. Ainda assim, antes do envio público, revisar esses identificadores à luz das diretrizes de propriedade intelectual e decidir se serão mantidos ou substituídos por nomes funcionais descritivos.
