@@ -1,12 +1,31 @@
 {
   "name": "figueira-content-squad",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Squad de conteúdo da Figueira Marketing para ChatGPT e Codex.",
   "skills": "../skills/",
   "interface": {
     "displayName": "Figueira Content Squad",
-    "shortDescription": "Planejamento, ganchos, copy e carrosséis para LinkedIn.",
+    "shortDescription": "Conteúdo estratégico LinkedIn",
+    "longDescription": "Fluxo editorial da Figueira Marketing para estruturar contexto de cliente, planejar conteúdo, desenvolver ganchos, redigir posts e produzir carrosséis LinkedIn com consistência de voz, evidência e direção visual.",
     "developerName": "Figueira Marketing",
-    "category": "Productivity"
+    "category": "Productivity",
+    "capabilities": [
+      "Estruturar contexto editorial do cliente",
+      "Planejar calendário e briefings de conteúdo",
+      "Criar e selecionar ganchos",
+      "Redigir posts LinkedIn",
+      "Transformar posts em carrosséis"
+    ],
+    "websiteURL": "https://figueiramarketing.com.br",
+    "privacyPolicyURL": "https://github.com/tuco-gui/figueira-marketing-skills/blob/main/plugins/figueira-content-squad/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/tuco-gui/figueira-marketing-skills/blob/main/plugins/figueira-content-squad/TERMS.md",
+    "brandColor": "#C4191F",
+    "composerIcon": "../assets/figueira-content-squad.png",
+    "logo": "../assets/figueira-content-squad.png",
+    "defaultPrompt": [
+      "Planeje minha semana de conteúdo no LinkedIn com o Figueira Content Squad.",
+      "Transforme este briefing em ganchos e um post de LinkedIn.",
+      "Transforme este post aprovado em um carrossel de LinkedIn."
+    ]
   }
 }

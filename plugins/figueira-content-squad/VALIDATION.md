@@ -12,3 +12,8 @@ Antes de publicar uma alteração:
 8. Setup, Kotler, Hormozi, Ogilvy e Da Vinci são **skills**, não novos agentes institucionais.
 9. O fluxo continua: Setup → Kotler → Hormozi → Ogilvy → Da Vinci.
 10. Nenhum segredo, credencial ou dado privado de cliente é versionado neste repositório público.
+11. Para submissão ao diretório OpenAI: `displayName` e `shortDescription` têm no máximo 30 caracteres.
+12. O manifesto inclui `logo` e `composerIcon` quadrados, entre 48×48 e 4096×4096 e menores que 5 MiB.
+13. Há no máximo três prompts iniciais, cada um com no máximo 128 caracteres.
+14. A pasta `submission/` mantém cinco casos positivos e três negativos para revisão.
+15. Mudanças de publicação pública exigem revisão dos materiais em `submission/` e aprovação explícita do owner antes do envio.

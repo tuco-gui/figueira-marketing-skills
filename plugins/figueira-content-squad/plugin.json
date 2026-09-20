@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "figueira-content-squad",
-  "version": "1.0.0",
-  "description": "Squad de conteúdo da Figueira Marketing: Setup, Kotler, Hormozi, Ogilvy e Da Vinci para estratégia, copy e carrosséis LinkedIn em ChatGPT e Codex.",
+  "version": "1.1.0",
+  "description": "Squad de conteúdo da Figueira Marketing para estratégia editorial, ganchos, copy e carrosséis LinkedIn em ChatGPT e Codex.",
   "author": {
     "name": "Figueira Marketing",
     "url": "https://figueiramarketing.com.br"
@@ -14,16 +14,27 @@
     "com.openai": {
       "interface": {
         "displayName": "Figueira Content Squad",
-        "shortDescription": "Planejamento, ganchos, copy e carrosséis para LinkedIn.",
-        "longDescription": "Fluxo integrado Setup → Kotler → Hormozi → Ogilvy → Da Vinci para estruturar contexto de cliente, planejar conteúdo, refinar ganchos, redigir posts e produzir carrosséis LinkedIn.",
+        "shortDescription": "Conteúdo estratégico LinkedIn",
+        "longDescription": "Fluxo editorial da Figueira Marketing para estruturar contexto de cliente, planejar conteúdo, desenvolver ganchos, redigir posts e produzir carrosséis LinkedIn com consistência de voz, evidência e direção visual.",
         "developerName": "Figueira Marketing",
         "category": "Productivity",
-        "capabilities": ["Read", "Write"],
+        "capabilities": [
+          "Estruturar contexto editorial do cliente",
+          "Planejar calendário e briefings de conteúdo",
+          "Criar e selecionar ganchos",
+          "Redigir posts LinkedIn",
+          "Transformar posts em carrosséis"
+        ],
         "websiteURL": "https://figueiramarketing.com.br",
+        "privacyPolicyURL": "https://github.com/tuco-gui/figueira-marketing-skills/blob/main/plugins/figueira-content-squad/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/tuco-gui/figueira-marketing-skills/blob/main/plugins/figueira-content-squad/TERMS.md",
         "brandColor": "#C4191F",
+        "composerIcon": "./assets/figueira-content-squad.png",
+        "logo": "./assets/figueira-content-squad.png",
         "defaultPrompt": [
-          "Use o Figueira Content Squad para planejar minha semana de conteúdo no LinkedIn.",
-          "Use o Figueira Content Squad para transformar este post aprovado em um carrossel."
+          "Planeje minha semana de conteúdo no LinkedIn com o Figueira Content Squad.",
+          "Transforme este briefing em ganchos e um post de LinkedIn.",
+          "Transforme este post aprovado em um carrossel de LinkedIn."
         ]
       }
     }

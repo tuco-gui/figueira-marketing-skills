@@ -2,6 +2,13 @@
 
 All notable repository-level changes are documented here.
 
+## [0.6.0] - 2026-09-20
+
+### Changed
+- Prepared `figueira-content-squad` v1.1.0 for OpenAI universal plugin-directory submission.
+- Added directory-compliant short metadata, required square branding assets, privacy/terms links and three starter prompts.
+- Added a reproducible submission dossier with five positive and three negative review cases.
+
 ## [0.5.0] - 2026-09-20
 
 ### Added
