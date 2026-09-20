@@ -1,0 +1,12 @@
+{
+  "name": "figueira-content-squad",
+  "version": "1.0.0",
+  "description": "Squad de conteúdo da Figueira Marketing para ChatGPT e Codex.",
+  "skills": "../skills/",
+  "interface": {
+    "displayName": "Figueira Content Squad",
+    "shortDescription": "Planejamento, ganchos, copy e carrosséis para LinkedIn.",
+    "developerName": "Figueira Marketing",
+    "category": "Productivity"
+  }
+}

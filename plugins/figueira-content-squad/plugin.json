@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "figueira-content-squad",
+  "version": "1.0.0",
+  "description": "Squad de conteúdo da Figueira Marketing: Setup, Kotler, Hormozi, Ogilvy e Da Vinci para estratégia, copy e carrosséis LinkedIn em ChatGPT e Codex.",
+  "author": {
+    "name": "Figueira Marketing",
+    "url": "https://figueiramarketing.com.br"
+  },
+  "homepage": "https://github.com/tuco-gui/figueira-marketing-skills/tree/main/plugins/figueira-content-squad",
+  "repository": "https://github.com/tuco-gui/figueira-marketing-skills",
+  "keywords": ["figueira", "marketing", "linkedin", "content", "copywriting", "carousel"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Figueira Content Squad",
+        "shortDescription": "Planejamento, ganchos, copy e carrosséis para LinkedIn.",
+        "longDescription": "Fluxo integrado Setup → Kotler → Hormozi → Ogilvy → Da Vinci para estruturar contexto de cliente, planejar conteúdo, refinar ganchos, redigir posts e produzir carrosséis LinkedIn.",
+        "developerName": "Figueira Marketing",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://figueiramarketing.com.br",
+        "brandColor": "#C4191F",
+        "defaultPrompt": [
+          "Use o Figueira Content Squad para planejar minha semana de conteúdo no LinkedIn.",
+          "Use o Figueira Content Squad para transformar este post aprovado em um carrossel."
+        ]
+      }
+    }
+  }
+}
