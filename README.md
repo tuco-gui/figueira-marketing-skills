@@ -125,3 +125,14 @@ This repository is public-facing. Do not commit:
 ## License
 
 Unless a dedicated license file is added, treat the contents as source-available for evaluation and replication only. Before redistributing or commercializing, add an explicit repository license.
+
+
+## Plugins
+
+### figueira-content-squad
+
+Pacote integrado de conteúdo para LinkedIn com cinco skills: **Setup → Kotler → Hormozi → Ogilvy → Da Vinci**.
+
+O plugin é portátil para ChatGPT e Codex e possui marketplace em `.agents/plugins/marketplace.json`. A fonte canônica está em `plugins/figueira-content-squad/`.
+
+Veja `plugins/figueira-content-squad/README.md` e `docs/INSTALLATION.md`.

@@ -154,3 +154,54 @@ For copied installs, copy the updated skill directory again after reviewing the 
 Skills can contain instructions, scripts and resources that an agent may execute or read. Review a third-party skill before installing it.
 
 Never add credentials, client information, internal Figueira documents, private strategy, secrets or tokens to this public repository.
+
+
+---
+
+## Figueira Content Squad plugin
+
+O squad de conteúdo é distribuído como um plugin skill-only portátil em:
+
+```text
+plugins/figueira-content-squad/
+```
+
+O mesmo pacote contém cinco skills: `setup`, `kotler`, `hormozi`, `ogilvy` e `davinci`.
+
+### Codex CLI
+
+Adicione o marketplace deste repositório:
+
+```bash
+codex plugin marketplace add tuco-gui/figueira-marketing-skills
+```
+
+Depois abra:
+
+```text
+/plugins
+```
+
+Selecione **Figueira Marketing Skills**, instale **Figueira Content Squad** e inicie uma nova sessão.
+
+### ChatGPT/Codex desktop
+
+O marketplace canônico está em `.agents/plugins/marketplace.json`. Depois que a fonte estiver configurada no cliente, instale **Figueira Content Squad** pelo Diretório de Plugins e inicie um novo chat/sessão.
+
+### ChatGPT Chat e Work na Web
+
+O pacote usa o manifesto portátil atual de plugins. Para uso na Web, o plugin precisa estar instalado/publicado na conta ou workspace. Em workspaces compatíveis, importe e sincronize o marketplace deste repositório pelo GitHub.
+
+### Codex web/cloud
+
+Quando o Codex estiver executando um repositório que referencia este marketplace/plugin, as mesmas skills ficam disponíveis sem fork de conteúdo.
+
+### Atualização
+
+Não edite cópias nos projetos consumidores. Atualize este repositório:
+
+```bash
+git pull --ff-only origin main
+```
+
+Projetos consumidores devem atualizar/sincronizar o marketplace ou plugin instalado.

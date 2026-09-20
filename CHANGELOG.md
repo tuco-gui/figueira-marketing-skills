@@ -2,6 +2,18 @@
 
 All notable repository-level changes are documented here.
 
+## [0.5.0] - 2026-09-20
+
+### Added
+- `figueira-content-squad` plugin with five portable skills: Setup, Kotler, Hormozi, Ogilvy and Da Vinci.
+- Repository plugin marketplace at `.agents/plugins/marketplace.json` for Codex/ChatGPT-compatible distribution.
+- OpenAI plugin metadata and Codex compatibility manifest.
+
+### Changed
+- Content squad instructions were normalized to use host-agnostic project/workspace/repository context instead of Claude-specific assumptions.
+- Content squad is explicitly modeled as skills, preserving the Figueira agent/skill/tool governance.
+
+
 ## [0.4.0] - 2026-08-30
 
 ### Added
