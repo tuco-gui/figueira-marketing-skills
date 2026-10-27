@@ -1,0 +1,9 @@
+[submodule "skills/impeccable"]
+	path = skills/impeccable
+	url = https://github.com/pbakaus/impeccable.git
+[submodule "skills/emil-skills"]
+	path = skills/emil-skills
+	url = https://github.com/emilkowalski/skills.git
+[submodule "skills/taste-skill"]
+	path = skills/taste-skill
+	url = https://github.com/Leonxlnx/taste-skill.git

@@ -2,15 +2,16 @@
 
 The skills in this repository follow the Agent Skills folder pattern: one skill directory containing `SKILL.md` plus optional `references/`, `scripts/`, `assets/` and product metadata.
 
-Available skills: `figueira-prompt-optimizer`, `figueira-copywriting`, `figueira-branding`, `figueira-web-design`. Every command below uses `figueira-prompt-optimizer` as the example — substitute any of the other skill names to install those instead.
+Available skills: `figueira-prompt-optimizer`, `figueira-copywriting`, `figueira-branding`; plus upstream Impeccable, Emil Kowalski Skills, and Taste Skill as Git submodules. Every command below uses `figueira-prompt-optimizer` as the example — substitute another Figueira-authored skill name to install it.
 
-`figueira-copywriting`, `figueira-branding` and `figueira-web-design` ship in English at their skill root and include a full Portuguese (Brazil) mirror under `<skill>/pt-BR/`. Installing the skill (by any method below) makes both available; the agent loads the English `SKILL.md` by default, and `pt-BR/SKILL.md` is available as reference material for Portuguese-speaking workflows.
+`figueira-copywriting` and `figueira-branding` ship in English at their skill root and include a full Portuguese (Brazil) mirror under `<skill>/pt-BR/`. Installing the skill (by any method below) makes both available; the agent loads the English `SKILL.md` by default, and `pt-BR/SKILL.md` is available as reference material for Portuguese-speaking workflows.
 
 ## Clone
 
 ```bash
-git clone https://github.com/tuco-gui/figueira-marketing-skills.git
+git clone --recurse-submodules https://github.com/tuco-gui/figueira-marketing-skills.git
 cd figueira-marketing-skills
+git submodule update --init --recursive
 ```
 
 ## Fast local installer (macOS/Linux)
@@ -144,7 +145,8 @@ For symlink installs:
 
 ```bash
 cd /path/to/figueira-marketing-skills
-git pull
+git pull --ff-only
+git submodule update --init --recursive
 ```
 
 For copied installs, copy the updated skill directory again after reviewing the changelog.
@@ -210,3 +212,18 @@ git pull --ff-only origin main
 ```
 
 Projetos consumidores devem atualizar/sincronizar o marketplace ou plugin instalado.
+
+
+## Official web design skills (replacing figueira-web-design)
+
+The previous Figueira web-design skill is no longer distributed. Its replacement consists of official upstream repositories pinned under `skills/`. Fetch them with `git submodule update --init --recursive`.
+
+Install into your agent using the upstream instructions; simply cloning the submodules does **not** activate them in an agent:
+
+```bash
+npx impeccable install
+npx skills@latest add emilkowalski/skills
+npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
+```
+
+Taste requires Node.js 22+ and Chrome/Chromium/Edge for browser checks. Do not overwrite unrelated global skills. To refresh pinned upstream revisions, review new upstream changes before moving each submodule commit.

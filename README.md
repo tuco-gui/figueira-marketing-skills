@@ -41,15 +41,9 @@ figueira-marketing-skills/
     │   ├── assets/
     │   ├── evals/
     │   └── pt-BR/            # full Portuguese (Brazil) mirror
-    └── figueira-web-design/
-        ├── SKILL.md
-        ├── README.md
-        ├── CHANGELOG.md
-        ├── references/
-        ├── agents/openai.yaml
-        ├── assets/
-        ├── evals/
-        └── pt-BR/            # full Portuguese (Brazil) mirror
+    ├── impeccable/              # official git submodule (Apache-2.0)
+    ├── emil-skills/             # official git submodule (MIT)
+    └── taste-skill/             # official git submodule (MIT)
 ```
 
 ## Available skills
@@ -93,17 +87,15 @@ Highlights:
 
 See `skills/figueira-branding/README.md`.
 
-### figueira-web-design
+### Official web design skills
 
-Orchestrates design direction, UX/CRO, visual architecture, responsible component sourcing, implementation, and QA for any web experience: landing pages, institutional sites, e-commerce, and web apps.
+The former custom `figueira-web-design` skill was retired and replaced with the **unmodified official upstream repositories**, pinned as Git submodules:
 
-Highlights:
-- acts as an orchestration layer above auxiliary visual skills, preventing premature implementation;
-- requires context-specific visual direction and avoids generic AI aesthetics;
-- separates design decisions from technology adapters (WordPress/WooCommerce, Shopify, React/Next.js);
-- available in English (canonical) and a full Portuguese (Brazil) mirror under `pt-BR/`.
+- [Impeccable](https://github.com/pbakaus/impeccable) — design audits, layout, typography, polish (Apache-2.0).
+- [Emil Kowalski Skills](https://github.com/emilkowalski/skills) — animation, mobile-native UX and edge-case testing (MIT).
+- [Taste Skill](https://github.com/Leonxlnx/taste-skill) — art direction, browser reviews and frontend design (MIT).
 
-See `skills/figueira-web-design/README.md`.
+Clone with `git clone --recurse-submodules`, or run `git submodule update --init --recursive` in an existing clone. Use the official upstream installers for your agent; submodules preserve the upstream packages rather than imitating their individual skills. See `docs/INSTALLATION.md`.
 
 ## Installation
 
