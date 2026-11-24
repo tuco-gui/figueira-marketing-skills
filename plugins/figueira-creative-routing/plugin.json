@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "figueira-creative-routing",
+  "version": "1.0.0",
+  "description": "Seleção de referências de design e ferramentas de animação para agentes criativos.",
+  "author": {
+    "name": "Figueira Marketing",
+    "url": "https://figueiramarketing.com.br"
+  },
+  "homepage": "https://github.com/tuco-gui/figueira-marketing-skills/tree/main/plugins/figueira-creative-routing",
+  "repository": "https://github.com/tuco-gui/figueira-marketing-skills",
+  "keywords": [
+    "figueira",
+    "design",
+    "animation",
+    "creative"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Figueira Creative Routing",
+        "shortDescription": "Design e animação",
+        "longDescription": "Seleciona ferramentas de design, ilustração e animação conforme o objetivo, runtime e licença.",
+        "developerName": "Figueira Marketing",
+        "category": "Productivity",
+        "capabilities": [
+          "Selecionar ferramentas de animação",
+          "Planejar produção de vídeos",
+          "Consultar referências de design"
+        ],
+        "websiteURL": "https://figueiramarketing.com.br",
+        "privacyPolicyURL": "https://github.com/tuco-gui/figueira-marketing-skills/blob/main/plugins/figueira-creative-routing/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/tuco-gui/figueira-marketing-skills/blob/main/plugins/figueira-creative-routing/TERMS.md",
+        "brandColor": "#C4191F",
+        "defaultPrompt": [
+          "Selecione a ferramenta mais adequada para este vídeo.",
+          "Planeje a direção de arte desta landing page."
+        ],
+        "supportURL": "https://github.com/tuco-gui/figueira-marketing-skills/issues"
+      }
+    }
+  }
+}
