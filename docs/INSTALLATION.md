@@ -227,3 +227,15 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-fro
 ```
 
 Taste requires Node.js 22+ and Chrome/Chromium/Edge for browser checks. Do not overwrite unrelated global skills. To refresh pinned upstream revisions, review new upstream changes before moving each submodule commit.
+
+
+## Creative routing (all agent surfaces)
+
+Canonical skill: `skills/figueira-creative-routing/SKILL.md`.
+
+```bash
+./scripts/install-skill.sh figueira-creative-routing claude
+./scripts/install-skill.sh figueira-creative-routing agents
+```
+
+For web, desktop, Cowork, Work, DGClaw and Hermes sessions with repository access, request that the agent read https://github.com/tuco-gui/figueira-marketing-skills/blob/main/skills/figueira-creative-routing/SKILL.md before creative work. This is explicit loading, not automatic installation. Native discovery on each surface must be tested separately. No GitHub Actions or additional VPS required. External animation runtimes are not bundled or approved for unattended execution.
