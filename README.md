@@ -128,3 +128,8 @@ Pacote integrado de conteúdo para LinkedIn com cinco skills: **Setup → Kotler
 O plugin é portátil para ChatGPT e Codex e possui marketplace em `.agents/plugins/marketplace.json`. A fonte canônica está em `plugins/figueira-content-squad/`.
 
 Veja `plugins/figueira-content-squad/README.md` e `docs/INSTALLATION.md`.
+
+
+### figueira-creative-routing
+
+Portable routing skill for website references, UI motion, procedural illustration and animation. Includes Tabbied, Landdding and nine upstream animation repositories. Read [SKILL.md](skills/figueira-creative-routing/SKILL.md) directly through GitHub when native skill discovery is unavailable. Reference-only: upstream runtimes are not installed automatically. Review and pin upstream code before executing it.
